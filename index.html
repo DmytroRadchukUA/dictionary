@@ -4,8 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dictionary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;500;600&family=Sofia+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
-    
-</body>
+    <div class="app">
+        <main class="main">
+            <h1>You best <span>Dictionary</span></h1>
+            <form class="form">
+                <div class="form-group">
+                    <input 
+                        placeholder="Type the text..."
+                        type="text" 
+                        name="word" 
+                        id="word-input"
+                        autocomplete="off"
+                        value=""
+                    />
+                </div>
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="error">Word not found</div>
+
+            <div class="results">
+                <div class="results-info">
+
+                    <div class="results-word">Vtjv</div>
+
+                    <div class="results-sound">
+                        <img src="./assets/images/sound.png" alt="icon">
+                    </div>
+                </div>
+                <div class="results-list">
+                    <div class="results-item">
+                        <div class="results-item__part">Noun</div>
+                        <div class="results-item__defenitions">
+                            <div class="results-item__defenition">
+                                <p>xsdxfgxfgdfgdfg</p>
+                                <div class="results-item__example">
+                                    sdfsdf
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./assets/js/script.js"></script>
 </html>
